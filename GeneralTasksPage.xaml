@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApp.GeneralTasksPage"
+             Title="GeneralTasksPage"
+             xmlns:viewmodel="clr-namespace:FinalApp.ViewModels"
+             x:DataType="viewmodel:GeneralTasksVM"
+             xmlns:local="clr-namespace:FinalApp">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Tasks which are important now:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"/>
+
+
+        <ScrollView HeightRequest="400">
+            <CollectionView
+            x:Name="colView"
+            ItemsSource="{Binding GeneralTasks}"
+            SelectionMode="None">
+
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Type local:TaskItem}">
+                        <SwipeView>
+                            <Border Padding="16,14">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10" />
+                                </Border.StrokeShape>
+                                <Grid  RowDefinitions="40, Auto, *"
+           ColumnDefinitions=".2*, .5*, .3*"
+           Padding="12,4"
+           
+           ColumnSpacing="10">
+                                    <Label Grid.Column="0" VerticalTextAlignment="Center" Text="{Binding Name}"
+            FontSize="16" FontAttributes="Bold" TextDecorations="Underline"></Label>
+                                    <Label Grid.Column="1" VerticalTextAlignment="Center" Text="{Binding Desc}"/>
+                                    <Label Grid.Column="2" FontSize="16" VerticalTextAlignment="Center">
+                                        <Label.Triggers>
+                                            <DataTrigger TargetType="Label"
+                             Binding="{Binding Done}"
+                             Value="true">
+                                                <Setter Property="Text"
+                                         Value="Готово" />
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Label"
+                             Binding="{Binding Done}"
+                             Value="false">
+                                                <Setter Property="Text"
+                                         Value="Не готово" />
+                                            </DataTrigger>
+                                        </Label.Triggers>
+                                    </Label>
+                                </Grid>
+                            </Border>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Delete"
+                               BackgroundColor="Red"
+                                               Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GeneralTasksVM}}, Path=RemoveItemCommand}"
+                                               CommandParameter="{Binding .}">
+                                    </SwipeItem>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <SwipeView.LeftItems>
+                                <SwipeItems>
+                                    <SwipeItem  Text="Edit"
+                                                BackgroundColor="Orange"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GeneralTasksVM}}, Path=GoToDetailsPageCommand}"
+                                                CommandParameter="{Binding .}">
+                                    </SwipeItem>
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
+
+                        </SwipeView>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </ScrollView>
+
+
+
+
+        <Grid
+      RowDefinitions="50, Auto, *"
+      ColumnDefinitions=".5*, .5*"
+      Padding="0,180,0,0"
+      RowSpacing="10"
+      ColumnSpacing="10">
+
+            <Button Grid.Column="0" WidthRequest="120" FontSize="20" Text="Back" Command="{Binding GoToBackCommand}"/>
+            <Button Grid.Column="1" WidthRequest="120" FontSize="20" Text="Refresh" Command="{Binding RefreshCommand}"/>
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

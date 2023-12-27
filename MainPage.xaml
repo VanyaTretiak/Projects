@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="20"
+            Padding="20"
+            VerticalOptions="Start">
+
+            <Image
+                Source="logo.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="To the ToDo Manager"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Margin="10,0,0,0"
+                Text="Start work"
+                Command="{Binding GoToAddTasksPageCommand}"
+                HorizontalOptions="Center" />
+            <Grid
+                  RowDefinitions="50, Auto, *"
+                  ColumnDefinitions=".5*, .5*"
+                  Padding="0,200,0,0"
+                  RowSpacing="10"
+                  ColumnSpacing="10">
+
+                <Button Grid.Column="0" WidthRequest="120" FontSize="20" Text="General" Command="{Binding GoToGeneralTasksPageCommand}"/>
+                <Button Grid.Column="1" WidthRequest="120" FontSize="20" Text="Future" Command="{Binding GoToFutureTasksPageCommand}"/>
+                
+            </Grid>
+                
+            
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

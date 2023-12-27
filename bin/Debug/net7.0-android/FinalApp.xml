@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FinalApp</name>
+    </assembly>
+    <members>
+        <member name="T:FinalApp.ViewModels.AddTaskVM">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:FinalApp.ViewModels.AddTaskVM.SelectedCategory">
+            <inheritdoc cref="F:FinalApp.ViewModels.AddTaskVM.selectedCategory"/>
+        </member>
+        <member name="P:FinalApp.ViewModels.AddTaskVM.DescriptionEntry">
+            <inheritdoc cref="F:FinalApp.ViewModels.AddTaskVM.descriptionEntry"/>
+        </member>
+        <member name="P:FinalApp.ViewModels.AddTaskVM.NameEntry">
+            <inheritdoc cref="F:FinalApp.ViewModels.AddTaskVM.nameEntry"/>
+        </member>
+        <member name="P:FinalApp.ViewModels.AddTaskVM.DoneEntry">
+            <inheritdoc cref="F:FinalApp.ViewModels.AddTaskVM.doneEntry"/>
+        </member>
+        <member name="F:FinalApp.ViewModels.AddTaskVM.goToBackCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.AddTaskVM.GoToBackCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.AddTaskVM.GoToBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.AddTaskVM.GoToBack"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.AddTaskVM.clearFieldsCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.AddTaskVM.ClearFieldsCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.AddTaskVM.ClearFieldsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.AddTaskVM.ClearFields"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.AddTaskVM.addTaskCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.AddTaskVM.AddTaskCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.AddTaskVM.AddTaskCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.AddTaskVM.AddTask"/>.</summary>
+        </member>
+        <member name="T:FinalApp.ViewModels.DetailsPageVM">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.Idis">
+            <inheritdoc cref="F:FinalApp.ViewModels.DetailsPageVM.idis"/>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.NameEntry">
+            <inheritdoc cref="F:FinalApp.ViewModels.DetailsPageVM.nameEntry"/>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.DescriptionEntry">
+            <inheritdoc cref="F:FinalApp.ViewModels.DetailsPageVM.descriptionEntry"/>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.SelectedCategory">
+            <inheritdoc cref="F:FinalApp.ViewModels.DetailsPageVM.selectedCategory"/>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.DoneEntry">
+            <inheritdoc cref="F:FinalApp.ViewModels.DetailsPageVM.doneEntry"/>
+        </member>
+        <member name="F:FinalApp.ViewModels.DetailsPageVM.loadItemCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.DetailsPageVM.LoadItemCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.LoadItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.DetailsPageVM.LoadItem"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.DetailsPageVM.goToBackCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.DetailsPageVM.GoToBackCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.GoToBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.DetailsPageVM.GoToBack"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.DetailsPageVM.saveItemCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.DetailsPageVM.SaveItemCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.DetailsPageVM.SaveItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.DetailsPageVM.SaveItem"/>.</summary>
+        </member>
+        <member name="T:FinalApp.ViewModels.FutureTasksVM">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:FinalApp.ViewModels.FutureTasksVM.FutureTasks">
+            <inheritdoc cref="F:FinalApp.ViewModels.FutureTasksVM.futureTasks"/>
+        </member>
+        <member name="F:FinalApp.ViewModels.FutureTasksVM.goToBackCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.FutureTasksVM.GoToBackCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.FutureTasksVM.GoToBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.FutureTasksVM.GoToBack"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.FutureTasksVM.removeItemCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.FutureTasksVM.RemoveItemCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.FutureTasksVM.RemoveItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:FinalApp.ViewModels.FutureTasksVM.RemoveItem(FinalApp.TaskItem)"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.FutureTasksVM.goToDetailsPageCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.FutureTasksVM.GoToDetailsPageCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.FutureTasksVM.GoToDetailsPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FinalApp.ViewModels.FutureTasksVM.GoToDetailsPage(FinalApp.TaskItem)"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.FutureTasksVM.refreshCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.FutureTasksVM.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.FutureTasksVM.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.FutureTasksVM.Refresh"/>.</summary>
+        </member>
+        <member name="T:FinalApp.ViewModels.GeneralTasksVM">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:FinalApp.ViewModels.GeneralTasksVM.GeneralTasks">
+            <inheritdoc cref="F:FinalApp.ViewModels.GeneralTasksVM.generalTasks"/>
+        </member>
+        <member name="F:FinalApp.ViewModels.GeneralTasksVM.goToBackCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.GeneralTasksVM.GoToBackCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.GeneralTasksVM.GoToBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.GeneralTasksVM.GoToBack"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.GeneralTasksVM.removeItemCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.GeneralTasksVM.RemoveItemCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.GeneralTasksVM.RemoveItemCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:FinalApp.ViewModels.GeneralTasksVM.RemoveItem(FinalApp.TaskItem)"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.GeneralTasksVM.refreshCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.GeneralTasksVM.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.GeneralTasksVM.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.GeneralTasksVM.Refresh"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.GeneralTasksVM.goToDetailsPageCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.GeneralTasksVM.GoToDetailsPageCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.GeneralTasksVM.GoToDetailsPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:FinalApp.ViewModels.GeneralTasksVM.GoToDetailsPage(FinalApp.TaskItem)"/>.</summary>
+        </member>
+        <member name="T:FinalApp.ViewModels.MainVM">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:FinalApp.ViewModels.MainVM.goToGeneralTasksPageCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.MainVM.GoToGeneralTasksPageCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.MainVM.GoToGeneralTasksPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.MainVM.GoToGeneralTasksPage"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.MainVM.goToFutureTasksPageCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.MainVM.GoToFutureTasksPageCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.MainVM.GoToFutureTasksPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.MainVM.GoToFutureTasksPage"/>.</summary>
+        </member>
+        <member name="F:FinalApp.ViewModels.MainVM.goToAddTasksPageCommand">
+            <summary>The backing field for <see cref="P:FinalApp.ViewModels.MainVM.GoToAddTasksPageCommand"/>.</summary>
+        </member>
+        <member name="P:FinalApp.ViewModels.MainVM.GoToAddTasksPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FinalApp.ViewModels.MainVM.GoToAddTasksPage"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedCategory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedCategory" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DescriptionEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DescriptionEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NameEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NameEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DoneEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DoneEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Idis">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Idis" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FutureTasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FutureTasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GeneralTasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GeneralTasks" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedCategory">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedCategory" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DescriptionEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DescriptionEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NameEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NameEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DoneEntry">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DoneEntry" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Idis">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Idis" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FutureTasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FutureTasks" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GeneralTasks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GeneralTasks" generated properties.</summary>
+        </member>
+    </members>
+</doc>
